@@ -1,0 +1,134 @@
+@import 'quasar.variables.sass'
+@import 'helper.sass'
+@import 'responsive.sass'
+
+*,
+p
+    margin: 0
+    padding: 0
+
+img
+    width: 100%
+    object-fit: cover
+
+#q-app
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: black
+
+// quasar
+.q-page-container
+    padding-top: 0 !important
+    padding-bottom: 0 !important
+
+.q-footer
+    height: 70px
+    background: transparent linear-gradient(180deg, #3c224c 0%, #999a99 100%) 0% 0% no-repeat padding-box
+
+.q-footer .tabs
+    position: absolute
+
+.dialogHeader
+    border-bottom: 1px solid #D3D3D3
+
+.dialogTitle
+    color: #604227
+
+.dialogDate
+    color: #7A7A7A
+
+//common
+.content
+    max-width: 900px
+    margin: 0 auto
+
+.w-100
+    width: 100% !important
+
+.h-100
+    height: 100% !important
+
+.background-none
+    background: none !important
+
+.btn_close
+    background: #7E7E7E 0% 0% no-repeat padding-box
+    border: 2px solid #DCDCDC
+
+.scale＿bar
+    height: 22px
+    background: #513535 0% 0% no-repeat padding-box
+    border-radius: 15px
+
+.life＿nowBar
+    background: transparent linear-gradient(180deg, #FF895D 0%, #A21106 100%) 0% 0% no-repeat padding-box
+    border-radius: 15px
+
+.exp＿nowBar
+    background: transparent linear-gradient(180deg, #FFEF5D 0%, #A24F06 100%) 0% 0% no-repeat padding-box
+    border-radius: 15px
+
+.img_avatar
+    z-index: 2
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.img_user
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+// Theme
+.theme-color
+    color: $theme !important
+.theme_input
+    color: white
+    width: 100%
+    height: 40px
+    background: #000000D6 0% 0% no-repeat padding-box
+    border: 2px solid #836999
+    border-radius: 8px
+
+.theme_btn
+    width: 225px
+    height: 40px
+    background: #582f5a 0% 0% no-repeat padding-box
+    border: 2px solid #836999
+
+.theme_frame
+    background: #000000D6 0% 0% no-repeat padding-box
+    border: 1px solid #836999
+    border-radius: 10px
+
+// RWD
+@media screen and (min-width: 521px)
+    .treasureChest_title
+        font-size: 2rem
+
+    .img_themeNav
+        width: 23%
+
+    .theme_img
+        width: 66%
+
+@media screen and (min-width: 481px) and (max-width: 520px)
+    .treasureChest_title
+        font-size: 2rem
+
+    .img_themeNav
+        width: 24%
+
+    .theme_img
+        width: 68%
+
+@media screen and (max-width: 480px)
+    .treasureChest_title
+        font-size: 1rem
+
+    .img_themeNav
+        width: 30%
+
+    .theme_img
+        width: 90%

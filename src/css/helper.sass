@@ -1,0 +1,104 @@
+/**
+  *  客製化
+  */
+
+// 圓角
+.rounded-xs
+  border-radius: 5px !important
+.rounded-sm
+  border-radius: 10px !important
+.rounded-sm-tr
+  border-top-right-radius: 8px !important
+.rounded-sm-tl
+  border-top-left-radius: 8px !important
+.rounded-md
+  border-radius: 30px !important
+.rounded-lg
+  border-radius: 40px !important
+
+// 字體大小
+.text-xxs
+  font-size: 10px !important
+.text-xs
+  font-size: 12px !important
+.text-sm
+  font-size: 14px !important
+.text-md
+  font-size: 16px !important
+.text-lg
+  font-size: 18px !important
+.text-xl
+  font-size: 24px !important
+.text-2xl
+  font-size: 32px !important
+.text-3xl
+  font-size: 40px !important
+
+
+.text-weight-300
+  font-weight: 300 !important
+.text-weight-400
+  font-weight: 400 !important
+.text-weight-500
+  font-weight: 500 !important
+.text-weight-600
+  font-weight: 600 !important
+.text-weight-700
+  font-weight: 700 !important
+.text-weight-800
+  font-weight: 800 !important
+
+.text-transform-none
+  text-transform: none
+
+
+.w-full
+  width: 100%
+
+
+// $xs-breakpoint: 718px
+// $sm-breakpoint: 1024px
+// $md-breakpoint: 1439px
+// $lg-breakpoint: 1920px
+
+// breakpoint variable, from https://quasar.dev/style/breakpoints
+// Except the xs one because I think 600px is too small
+$xs-breakpoint: 599px
+$sm-breakpoint: 800px
+$md-breakpoint: 1023px
+$lg-breakpoint: 1439px
+
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl
+  width: 100%
+  margin-right: auto
+  margin-left: auto
+
+@media (min-width: $xs-breakpoint)
+  .container,
+  .container-sm
+    max-width: 540px
+
+@media (min-width: $sm-breakpoint)
+  .container,
+  .container-sm,
+  .container-md
+    max-width: 920px
+
+@media (min-width: $md-breakpoint)
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg
+    max-width: 1140px
+
+@media (min-width: $lg-breakpoint)
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl
+    max-width: 1440px
