@@ -9,7 +9,8 @@
     "lint": "eslint --ext .js,.vue ./",
     "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
     "test": "echo \"No test specified\" && exit 0",
-    "dev": "yarn lint && quasar dev"
+    "dev": "yarn lint && quasar dev",
+    "deploy": "push-dir --dir=dist/spa-ios --remote=gh-pages --branch=master"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
@@ -27,7 +28,8 @@
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^7.0.0",
     "eslint-webpack-plugin": "^2.4.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "push-dir": "^0.4.1"
   },
   "browserslist": [
     "last 10 Chrome versions",
