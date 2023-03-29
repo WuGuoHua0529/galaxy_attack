@@ -3,7 +3,7 @@
     <div class="userinfo_row q-py-sm q-px-xs flex">
       <div class="img_userinfo relative-position">
         <q-img
-          src="/statics/img/home/user.png"
+          src="statics/img/home/user.png"
           class="img_user absolute"
           no-spinner
           no-transition
@@ -15,7 +15,7 @@
           <div class="user_id q-px-sm q-mx-xs">探險家零壹</div>
           <div class="relative-position">
             <q-img
-              src="/statics/img/home/key.png"
+              src="statics/img/home/key.png"
               width="84px"
               height="46px"
               no-spinner
@@ -71,29 +71,29 @@
 
 <script>
 export default {
-    name: 'BulletinInfo',
-    props: {
-        data: {
-            type: Array,
-            default: () => []
-        }
-    },
-    data () {
-        return {
-            dialogStatus: false,
-            openData: {}
-        }
-    },
-    created () {
-    },
-    mounted () {
-    },
-    methods: {
-        openDialog (data) {
-            this.dialogStatus = true
-            this.openData = data
-        }
+  name: 'BulletinInfo',
+  props: {
+    data: {
+      type: Array,
+      default: () => []
     }
+  },
+  data () {
+    return {
+      dialogStatus: false,
+      openData: {}
+    }
+  },
+  created () {
+  },
+  mounted () {
+  },
+  methods: {
+    openDialog (data) {
+      this.dialogStatus = true
+      this.openData = data
+    }
+  }
 }
 </script>
 <style lang="sass" scoped>

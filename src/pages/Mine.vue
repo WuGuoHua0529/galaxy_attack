@@ -3,7 +3,7 @@
     <div class="theme_frame row items-center q-pa-md q-my-md">
       <div class="col-3">
         <q-img
-          src="/statics/img/mine/coin.png"
+          src="statics/img/mine/coin.png"
           no-spinner
           no-transition
         />
@@ -31,7 +31,7 @@
       >
         <div class="col-2">
           <q-img
-            :src="`/statics/img/planet/planet_${ item.lv }.png`"
+            :src="`statics/img/planet/planet_${ item.lv }.png`"
             no-spinner
             no-transition
           />
@@ -59,7 +59,7 @@
       >
         <div class="col-2">
           <q-img
-            :src="`/statics/img/planet/planet_${ item.lv }.png`"
+            :src="`statics/img/planet/planet_${ item.lv }.png`"
             no-spinner
             no-transition
           />
@@ -86,7 +86,7 @@
       >
         <div class="col-2">
           <q-img
-            :src="`/statics/img/robot/robot_Lv${ item.lv }.png`"
+            :src="`statics/img/robot/robot_Lv${ item.lv }.png`"
             no-spinner
             no-transition
           />
@@ -115,7 +115,7 @@
       >
         <div class="col-2">
           <q-img
-            :src="`/statics/img/map/map_${ item.lv }.png`"
+            :src="`statics/img/map/map_${ item.lv }.png`"
             no-spinner
             no-transition
           />
@@ -137,42 +137,42 @@
 
 <script>
 export default {
-    name: 'Mine',
-    data () {
-        return {
-            buyRecordData: [
-                { name: '行星 002', date: '2023/11/02', score: 15, lv: 1 },
-                { name: '行星 978', date: '2023/08/05', score: 23, lv: 2 },
-                { name: '行星 334', date: '2023/01/22', score: 50, lv: 3 },
-                { name: '行星 013', date: '2022/11/02', score: 15, lv: 5 },
-                { name: '行星 222', date: '2022/08/05', score: 223, lv: 3 },
-            ],
-            findRecordData: [
-                { name: '行星 334242', date: '2023/01/12 00:00:00 - 2023/02/22 07:00:00', lv: 1 },
-                { name: '行星 433', date: '2023/10/23 00:00:00 - 2023/12/02 07:00:00', lv: 4 },
-                { name: '行星 267659', date: '2023/08/15 00:00:00 - 2023/11/31 07:00:00', lv: 5 }
-            ],
-            mallRecordData: [
-                { name: '探勘機器人(10天)', date: '2023/12/02', num: 10, score: 181, lv: 1 },
-                { name: '探勘機器人(15天)', date: '2023/10/12', num: 13, score: 56, lv: 2 },
-                { name: '探勘機器人(30天)', date: '2023/09/29', num: 22, score: 108, lv: 3 },
-                { name: '探勘機器人(30天)', date: '2023/08/19', num: 11, score: 28, lv: 3 },
-                { name: '探勘機器人(10天)', date: '2023/05/29', num: 1, score: 18, lv: 1 },
-            ],
-            itemUseRecordData: [
-                { name: '破舊藏寶圖', date: '2023/12/16', num: 1, lv: 1 },
-                { name: '完整藏寶圖', date: '2023/10/20', num: 1, lv: 2 },
-                { name: '寶藏藏寶圖', date: '2023/05/12', num: 1, lv: 3 },
-                { name: '破舊藏寶圖', date: '2023/03/16', num: 1, lv: 1 }
-            ]
-        }
-    },
-    created () {
-    },
-    mounted () {
-    },
-    methods: {
+  name: 'Mine',
+  data () {
+    return {
+      buyRecordData: [
+        { name: '行星 002', date: '2023/11/02', score: 15, lv: 1 },
+        { name: '行星 978', date: '2023/08/05', score: 23, lv: 2 },
+        { name: '行星 334', date: '2023/01/22', score: 50, lv: 3 },
+        { name: '行星 013', date: '2022/11/02', score: 15, lv: 5 },
+        { name: '行星 222', date: '2022/08/05', score: 223, lv: 3 },
+      ],
+      findRecordData: [
+        { name: '行星 334242', date: '2023/01/12 00:00:00 - 2023/02/22 07:00:00', lv: 1 },
+        { name: '行星 433', date: '2023/10/23 00:00:00 - 2023/12/02 07:00:00', lv: 4 },
+        { name: '行星 267659', date: '2023/08/15 00:00:00 - 2023/11/31 07:00:00', lv: 5 }
+      ],
+      mallRecordData: [
+        { name: '探勘機器人(10天)', date: '2023/12/02', num: 10, score: 181, lv: 1 },
+        { name: '探勘機器人(15天)', date: '2023/10/12', num: 13, score: 56, lv: 2 },
+        { name: '探勘機器人(30天)', date: '2023/09/29', num: 22, score: 108, lv: 3 },
+        { name: '探勘機器人(30天)', date: '2023/08/19', num: 11, score: 28, lv: 3 },
+        { name: '探勘機器人(10天)', date: '2023/05/29', num: 1, score: 18, lv: 1 },
+      ],
+      itemUseRecordData: [
+        { name: '破舊藏寶圖', date: '2023/12/16', num: 1, lv: 1 },
+        { name: '完整藏寶圖', date: '2023/10/20', num: 1, lv: 2 },
+        { name: '寶藏藏寶圖', date: '2023/05/12', num: 1, lv: 3 },
+        { name: '破舊藏寶圖', date: '2023/03/16', num: 1, lv: 1 }
+      ]
     }
+  },
+  created () {
+  },
+  mounted () {
+  },
+  methods: {
+  }
 }
 </script>
 <style lang="sass" scoped>

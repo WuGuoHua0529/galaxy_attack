@@ -13,7 +13,7 @@
       >
         <q-img
           class="theme_img"
-          :src="`/statics/img/robot/robot_Lv${item.lv}.png`"
+          :src="`statics/img/robot/robot_Lv${item.lv}.png`"
           no-spinner
           no-transition
         />

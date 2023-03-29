@@ -22,7 +22,7 @@
       >
         <q-img
           class="theme_img"
-          :src="`/statics/img/map/map_${item.lv}.png`"
+          :src="`statics/img/map/map_${item.lv}.png`"
           no-spinner
           no-transition
         />

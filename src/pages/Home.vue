@@ -4,7 +4,7 @@
 
     <div class="content q-pa-md">
       <q-img
-        src="/statics/svg/treasure_hunt.svg"
+        src="statics/svg/treasure_hunt.svg"
         no-spinner
         no-transition
       >
@@ -25,7 +25,7 @@
           <div class="w-100 flex flex-center">
             <q-img
               class="theme_img"
-              :src="`/statics/img/planet/planet_${item.lv}.png`"
+              :src="`statics/img/planet/planet_${item.lv}.png`"
               no-spinner
               no-transition
             />

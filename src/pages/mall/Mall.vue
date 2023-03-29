@@ -10,7 +10,7 @@
           class="img_themeNav q-mx-xs"
           no-spinner
           no-transition
-          :src="`/statics/svg/${item.key}${item.key === nowNav ? '_active' : '' }.svg`"
+          :src="`statics/svg/${item.key}${item.key === nowNav ? '_active' : '' }.svg`"
           @click="changeNav(item.key)"
         />
       </div>
@@ -23,28 +23,28 @@
 import UserInfo from 'src/components/UserInfo.vue'
 
 export default {
-    name: 'Mall',
-    components: {
-        UserInfo
-    },
-    data () {
-        return {
-            nowNav: 'props',
-            navData: [
-                { key: 'props' },
-                { key: 'exchangeCommodity' },
-                { key: 'myCommodity' }
-            ]
-        }
-    },
-    created () {
-        this.nowNav = this.$route.name
-    },
-    methods: {
-        changeNav (key) {
-            this.nowNav = key
-            this.$router.push({ name: key })
-        }
+  name: 'Mall',
+  components: {
+    UserInfo
+  },
+  data () {
+    return {
+      nowNav: 'props',
+      navData: [
+        { key: 'props' },
+        { key: 'exchangeCommodity' },
+        { key: 'myCommodity' }
+      ]
     }
+  },
+  created () {
+    this.nowNav = this.$route.name
+  },
+  methods: {
+    changeNav (key) {
+      this.nowNav = key
+      this.$router.push({ name: key })
+    }
+  }
 }
 </script>

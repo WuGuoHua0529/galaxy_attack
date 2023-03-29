@@ -9,7 +9,7 @@
       >
         <q-img
           class="theme_img"
-          :src="`/statics/img/robot/robot_Lv${item.lv}.png`"
+          :src="`statics/img/robot/robot_Lv${item.lv}.png`"
           no-spinner
           no-transition
         />
@@ -33,7 +33,7 @@
       >
         <q-img
           class="theme_img"
-          :src="`/statics/img/robot/robot_Lv${item.lv}.png`"
+          :src="`statics/img/robot/robot_Lv${item.lv}.png`"
           no-spinner
           no-transition
         />
@@ -51,20 +51,20 @@
 <script>
 
 export default {
-    name: 'MyCommodity',
-    data () {
-        return {
-            robotData: [
-                { lv: 1, status: true, day: 30 },
-                { lv: 2, status: true, day: 10 },
-                { lv: 3, status: false, day: 0 }
-            ],
-            robotCouponData: [
-                { lv: 2, code: 'DJeFEd' },
-                { lv: 3, code: 'Gh96dr' },
-            ]
-        }
+  name: 'MyCommodity',
+  data () {
+    return {
+      robotData: [
+        { lv: 1, status: true, day: 30 },
+        { lv: 2, status: true, day: 10 },
+        { lv: 3, status: false, day: 0 }
+      ],
+      robotCouponData: [
+        { lv: 2, code: 'DJeFEd' },
+        { lv: 3, code: 'Gh96dr' },
+      ]
     }
+  }
 }
 </script>
 <style lang="sass" scoped>

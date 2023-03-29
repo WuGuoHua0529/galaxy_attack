@@ -2,13 +2,13 @@
   <div class="partnerTopOne theme_frame row q-pa-sm q-pb-md items-center">
     <div class="col-4 relative-position h-100">
       <q-img
-        src="/statics/img/home/user.png"
+        src="statics/img/home/user.png"
         class="img_user absolute"
         no-spinner
         no-transition
       />
       <q-img
-        src="/statics/img/partner/Icon_Level_M06.png"
+        src="statics/img/partner/Icon_Level_M06.png"
         class="img_levelIcon absolute"
         no-spinner
         no-transition
@@ -17,7 +17,7 @@
     <div class="col-8 text-white text-sm q-pl-md text-weight-800">
       <div>
         <q-img
-          src="/statics/img/partner/Icon_Level_01.png"
+          src="statics/img/partner/Icon_Level_01.png"
           width="38px"
           height="38px"
           no-spinner
@@ -48,23 +48,23 @@
 
 <script>
 export default {
-    name: 'PartnerTopOne',
-    props: {
-        data: {
-            type: Object,
-            default: () => { }
-        }
-    },
-    data () {
-        return {
-        }
-    },
-    created () {
-    },
-    mounted () {
-    },
-    methods: {
+  name: 'PartnerTopOne',
+  props: {
+    data: {
+      type: Object,
+      default: () => { }
     }
+  },
+  data () {
+    return {
+    }
+  },
+  created () {
+  },
+  mounted () {
+  },
+  methods: {
+  }
 }
 </script>
 <style lang="sass" scoped>

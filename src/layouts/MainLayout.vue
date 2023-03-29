@@ -40,7 +40,7 @@
           @click="checkAuth"
         >
           <q-icon
-            :name="`img:/statics/img/menuIcon/${ item.img }`"
+            :name="`img:statics/img/menuIcon/${ item.img }`"
             size="50px"
             class="footer-icon q-mt-sm"
           />
@@ -100,7 +100,8 @@ export default {
 <style lang="sass">
 .q-layout
   background-size: cover
-  background-image: url(/statics/img/home/BodyBG.jpg)
+  // background-image: url(/statics/img/home/BodyBG.jpg)
+  background-image: url(/galaxy_attack/statics/img/home/BodyBG.jpg)
   max-width: 520px
 
 .q-header
