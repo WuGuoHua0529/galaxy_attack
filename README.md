@@ -2,6 +2,10 @@
 
 A Quasar Framework app
 
+## Demo
+
+https://wuguohua0529.github.io/galaxy_attack/
+
 ## Install the dependencies
 
 ```bash
