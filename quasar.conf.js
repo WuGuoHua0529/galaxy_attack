@@ -45,7 +45,9 @@ module.exports = configure(function (ctx) {
       vueRouterMode: "history", // available values: 'hash', 'history'
 
       // transpile: false,
-      // publicPath: '/',
+      publicPath: process.env.NODE_ENV === 'production'
+        ? '/galaxy_attack/'
+        : '/',
 
       // Add dependencies for transpiling with Babel (Array of string/regex)
       // (from node_modules, which are by default not transpiled).
@@ -72,9 +74,9 @@ module.exports = configure(function (ctx) {
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
     devServer: {
-      server: {
-        type: "http",
-      },
+      // server: {
+      //   type: "https",
+      // },
       port: 8080,
       open: true, // opens browser window automatically
     },
