@@ -15,13 +15,12 @@
           <div class="user_id q-px-sm q-mx-xs">探險家零壹</div>
           <div class="relative-position">
             <q-img
-              src="statics/img/home/key.png"
-              width="84px"
+              src="statics/img/home/message.png"
+              width="46px"
               height="46px"
               no-spinner
               no-transition
             >
-              <div class="div_key text-lg absolute-bottom text-center text-weight-800 background-none theme-color q-pa-xs">4</div>
             </q-img>
           </div>
         </div>
@@ -31,11 +30,11 @@
             <div class="scale＿bar relative-position">
               <div
                 class="life＿nowBar absolute h-100"
-                style="width: 40%;"
+                style="width: 88%;"
               ></div>
               <div class="flex justify-between items-center absolute h-100 w-100 text-white q-px-sm">
-                <div>40</div>
-                <div>100</div>
+                <div>88%</div>
+                <div>100%</div>
               </div>
             </div>
           </div>
@@ -45,11 +44,11 @@
             <div class="scale＿bar relative-position">
               <div
                 class="exp＿nowBar absolute h-100"
-                style="width: 20%;"
+                style="width: 50%;"
               ></div>
               <div class="flex justify-between items-center absolute h-100 w-100 text-white q-px-sm">
-                <div>20</div>
-                <div>100</div>
+                <div>50%</div>
+                <div>100%</div>
               </div>
             </div>
             <div class="flex justify-between text-xs">
@@ -121,7 +120,7 @@ export default {
   .user_id
     width: 100%
     height: 35px
-    background: transparent linear-gradient(180deg, #5B390B 0%, #290C0C 100%) 0% 0% no-repeat padding-box
+    background: transparent linear-gradient(180deg, #9a7cbc 0%, #290C0C 100%) 0% 0% no-repeat padding-box
     box-shadow: inset 0px 3px 6px #00000029
     border-radius: 8px
     color: #FFF

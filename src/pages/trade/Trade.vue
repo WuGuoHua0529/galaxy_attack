@@ -1,7 +1,5 @@
 <template>
   <q-page>
-    <UserInfo />
-
     <div class="content q-pa-md">
       <div class="flex flex-center">
         <q-btn
@@ -18,13 +16,8 @@
 </template>
 
 <script>
-import UserInfo from 'src/components/UserInfo.vue'
-
 export default {
   name: 'Mall',
-  components: {
-    UserInfo
-  },
   data () {
     return {
       nowNav: 'sale',

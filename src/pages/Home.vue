@@ -3,15 +3,11 @@
     <UserInfo />
 
     <div class="content q-pa-md">
-      <q-img
-        src="statics/svg/treasure_hunt.svg"
-        no-spinner
-        no-transition
-      >
-        <div class="treasureChest_title absolute-bottom text-center text-weight-800 background-none theme-color">
+      <div class="flex flex-center">
+        <div class="treasureChest_title text-center text-weight-800">
           行星
         </div>
-      </q-img>
+      </div>
       <q-infinite-scroll
         class="row q-py-md"
         @load="onLoad"

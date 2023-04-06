@@ -155,6 +155,7 @@ export default {
   name: 'Mine',
   data () {
     return {
+      exchangeNumber: '',
       buyRecordData: [
         { name: '行星 002', date: '2023/11/02', score: 15, lv: 1 },
         { name: '行星 978', date: '2023/08/05', score: 23, lv: 2 },

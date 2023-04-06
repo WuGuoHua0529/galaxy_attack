@@ -11,7 +11,7 @@
             label="登艦"
             rounded
             class="btn_header q-px-sm"
-            icon="img:statics/svg/account.svg"
+            icon="img:statics/img/header/aircraft.png"
             :to="{ name: 'login' }"
           />
         </div>
@@ -64,8 +64,8 @@ export default {
         { key: 'bulletin', name: '更新消息', img: 'MenuIcon_Post.png' },
         { key: 'rober', name: '道具', img: 'MenuIcon_equipment.png' },
         { key: 'trade', name: '航線', img: 'MenuIcon_trade.png' },
+        { key: 'mine', name: '資訊', img: 'MenuIcon_My.png' },
         { key: 'partner', name: '艦隊公會', img: 'MenuIcon_partner.png' },
-        { key: 'mine', name: '資訊', img: 'MenuIcon_My.png' }
       ]
     }
   },
