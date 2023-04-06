@@ -20,6 +20,21 @@
       </div>
     </div>
 
+    <div>
+      <input
+        v-model="exchangeNumber"
+        class="theme_input q-my-sm text-center text-sm"
+        placeholder="請輸入兌換序號"
+      />
+      <div class="flex flex-center">
+        <q-btn
+          rounded
+          text-color="white"
+          class="theme_btn btn_exchange text-center text-weight-800 q-my-sm"
+        >兌換</q-btn>
+      </div>
+    </div>
+
     <div class="theme_frame items-center text-white q-pa-md q-my-md">
       <div class="mine_title text-weight-800 q-mt-sm q-pb-sm">
         佔領紀錄
@@ -106,7 +121,7 @@
 
     <div class="theme_frame items-center text-white q-pa-md q-my-md">
       <div class="mine_title text-weight-800 q-mt-sm q-pb-sm">
-        物品使用紀錄
+        探索紀錄
       </div>
       <div
         v-for="(item, index) in itemUseRecordData"
@@ -160,10 +175,10 @@ export default {
         { name: '探勘機器人(10天)', date: '2023/05/29', num: 1, score: 18, lv: 1 },
       ],
       itemUseRecordData: [
-        { name: '破舊藏寶圖', date: '2023/12/16', num: 1, lv: 1 },
-        { name: '完整藏寶圖', date: '2023/10/20', num: 1, lv: 2 },
-        { name: '寶藏藏寶圖', date: '2023/05/12', num: 1, lv: 3 },
-        { name: '破舊藏寶圖', date: '2023/03/16', num: 1, lv: 1 }
+        { name: '破舊航線圖', date: '2023/12/16', num: 1, lv: 1 },
+        { name: '完整航線圖', date: '2023/10/20', num: 1, lv: 2 },
+        { name: '寶藏航線圖', date: '2023/05/12', num: 1, lv: 3 },
+        { name: '破舊航線圖', date: '2023/03/16', num: 1, lv: 1 }
       ]
     }
   },

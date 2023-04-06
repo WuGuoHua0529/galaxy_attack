@@ -72,7 +72,7 @@
 <script>
 
 export default {
-  name: 'Props',
+  name: 'Rober',
   data () {
     return {
       robotCouponData: [

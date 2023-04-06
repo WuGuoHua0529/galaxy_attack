@@ -8,7 +8,7 @@
         >Galaxy Attack</div>
         <div>
           <q-btn
-            label="登入"
+            label="登艦"
             rounded
             class="btn_header q-px-sm"
             icon="img:statics/svg/account.svg"
@@ -61,11 +61,11 @@ export default {
       tab: 'home',
       alert: false,
       navData: [
-        { key: 'bulletin', name: '公告', img: 'MenuIcon_Post.png' },
-        { key: 'mall', name: '商城', img: 'MenuIcon_equipment.png' },
-        { key: 'trade', name: '交易', img: 'MenuIcon_trade.png' },
-        { key: 'partner', name: '夥伴', img: 'MenuIcon_partner.png' },
-        { key: 'mine', name: '我的', img: 'MenuIcon_My.png' }
+        { key: 'bulletin', name: '更新消息', img: 'MenuIcon_Post.png' },
+        { key: 'rober', name: '道具', img: 'MenuIcon_equipment.png' },
+        { key: 'trade', name: '航線', img: 'MenuIcon_trade.png' },
+        { key: 'partner', name: '艦隊公會', img: 'MenuIcon_partner.png' },
+        { key: 'mine', name: '資訊', img: 'MenuIcon_My.png' }
       ]
     }
   },

@@ -4,13 +4,11 @@
 
     <div class="content q-pa-md">
       <div class="flex flex-center">
-        <q-img
+        <q-btn
           v-for="(item, index) in navData"
           :key="`navData_${index}`"
-          class="img_themeNav q-mx-xs"
-          no-spinner
-          no-transition
-          :src="`statics/svg/${item.key}${item.key === nowNav ? '_active' : '' }.svg`"
+          class="btn_header q-mx-sm"
+          :label="item.label"
           @click="changeNav(item.key)"
         />
       </div>
@@ -31,9 +29,8 @@ export default {
     return {
       nowNav: 'props',
       navData: [
-        { key: 'props' },
-        { key: 'exchangeCommodity' },
-        { key: 'myCommodity' }
+        { key: 'rober', label: '機器人' },
+        { key: 'myRober', label: '我的機器人' }
       ]
     }
   },
@@ -48,3 +45,7 @@ export default {
   }
 }
 </script>
+<style lang="sass" scoped>
+.btn_header
+  width: 130px
+</style>

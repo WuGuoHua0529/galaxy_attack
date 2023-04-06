@@ -1,22 +1,6 @@
 <template>
   <q-page>
-    <div class="text-lg text-white text-weight-800 text-center q-my-sm">宇宙探勘圖</div>
-    <div class="row flex-center">
-      <q-btn
-        class="col-4 trade_btn q-mx-xs"
-        :class="{ 'trade_btnActive': sortKey === 'money' }"
-        label="依價格排序 ▼"
-        dense
-        @click="sortKey = 'money'"
-      />
-      <q-btn
-        class="col-4 trade_btn q-mx-xs"
-        :class="{ 'trade_btnActive': sortKey === 'time'  }"
-        label="依時間排序 ▼"
-        dense
-        @click="sortKey = 'time'"
-      />
-    </div>
+    <div class="text-lg text-white text-weight-800 text-center q-my-md">宇宙探勘圖</div>
     <q-infinite-scroll
       class="row q-py-md"
       @load="onLoad"
@@ -40,7 +24,7 @@
           text-color="white"
           class="theme_btn btn_buy text-center text-weight-800 q-my-sm"
           @click="buyMap"
-        >搶購</q-btn>
+        >購買</q-btn>
       </div>
     </q-infinite-scroll>
     <q-dialog v-model="dialogStatus">

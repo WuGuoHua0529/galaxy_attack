@@ -19,7 +19,7 @@
                 no-transition
               />
               <q-img
-                :src="`statics/img/partner/Icon_Level_M0${item.level}.png`"
+                :src="`statics/img/partner/chevron0${item.level}.png`"
                 class="img_levelIcon absolute"
                 no-spinner
                 no-transition
@@ -105,7 +105,7 @@ export default {
   .img_levelIcon
     right: 0%
     bottom: 1%
-    width: 33%
+    width: 25%
 
 @media screen and (min-width: 481px) and (max-width: 520px)
   .img_avatar
@@ -117,7 +117,7 @@ export default {
   .img_levelIcon
     right: 0%
     bottom: 1%
-    width: 35%
+    width: 25%
 
 @media screen and (max-width: 480px)
   .img_avatar
@@ -129,5 +129,5 @@ export default {
   .img_levelIcon
     right: -10%
     bottom: 8%
-    width: 40%
+    width: 30%
 </style>

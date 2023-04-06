@@ -1,15 +1,6 @@
 <template>
   <q-page>
-    <div class="text-lg text-white text-weight-800 text-center q-my-sm">宇宙探勘圖</div>
-    <div class="row flex-center">
-      <q-btn
-        class="col-12 trade_btn"
-        :class="{ 'trade_btnActive': sortKey === 'time'  }"
-        label="依時間排序 ▼"
-        dense
-        @click="sortKey = 'time'"
-      />
-    </div>
+    <div class="text-lg text-white text-weight-800 text-center q-my-md">宇宙探勘圖</div>
     <q-infinite-scroll
       class="row q-py-md"
       @load="onLoad"
@@ -32,13 +23,13 @@
             rounded
             text-color="white"
             class="theme_btn btn_exchange text-center text-weight-800 q-mt-sm"
-          >01:55:32</q-btn>
+          >探索中</q-btn>
           <q-btn
             v-else
             rounded
             text-color="white"
             class="theme_btn btn_buy text-center text-weight-800 q-mt-sm"
-          >開始專賣</q-btn>
+          >開始探索</q-btn>
         </div>
       </div>
     </q-infinite-scroll>

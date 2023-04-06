@@ -19,9 +19,9 @@
             text-color="white"
             class="theme_btn btn_use text-center text-weight-800 q-my-sm"
             :class="{ btn_close: item.status }"
-          >{{ item.status ? '使用中' : '使用' }}</q-btn>
+          >{{ item.status ? '探勘中' : '開啟' }}</q-btn>
         </div>
-        <div class="text-sm text-center text-white q-mt-xs q-px-sm">{{ item.status ? `剩餘 ${ item.day } 天` : '尚未使用' }}</div>
+        <div class="text-sm text-center text-white q-mt-xs q-px-sm">{{ item.status ? `剩餘 ${ item.day } 天` : '尚未開啟' }}</div>
       </div>
     </div>
     <div class="text-lg text-white text-weight-800 text-center q-my-sm">探勘機器人 兌換序號</div>
@@ -51,7 +51,7 @@
 <script>
 
 export default {
-  name: 'MyCommodity',
+  name: 'MyRober',
   data () {
     return {
       robotData: [
@@ -60,8 +60,8 @@ export default {
         { lv: 3, status: false, day: 0 }
       ],
       robotCouponData: [
-        { lv: 2, code: 'DJeFEd' },
-        { lv: 3, code: 'Gh96dr' },
+        { lv: 2, code: 'XX15A3' },
+        { lv: 3, code: 'MY334Y' },
       ]
     }
   }

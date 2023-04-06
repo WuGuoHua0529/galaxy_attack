@@ -4,13 +4,11 @@
 
     <div class="content q-pa-md">
       <div class="flex flex-center">
-        <q-img
+        <q-btn
           v-for="(item, index) in navData"
           :key="`navData_${index}`"
-          class="img_themeNav q-mx-sm"
-          no-spinner
-          no-transition
-          :src="`statics/svg/${item.key}${item.key === nowNav ? '_active' : '' }.svg`"
+          class="btn_header q-mx-sm"
+          :label="item.label"
           @click="changeNav(item.key)"
         />
       </div>
@@ -31,8 +29,8 @@ export default {
     return {
       nowNav: 'sale',
       navData: [
-        { key: 'sale' },
-        { key: 'map' }
+        { key: 'sale', label: '購買航線' },
+        { key: 'map', label: '我的航線' }
       ]
     }
   },

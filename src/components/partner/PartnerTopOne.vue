@@ -8,7 +8,7 @@
         no-transition
       />
       <q-img
-        src="statics/img/partner/Icon_Level_M06.png"
+        src="statics/img/partner/chevron06.png"
         class="img_levelIcon absolute"
         no-spinner
         no-transition
@@ -16,14 +16,7 @@
     </div>
     <div class="col-8 text-white text-sm q-pl-md text-weight-800">
       <div>
-        <q-img
-          src="statics/img/partner/Icon_Level_01.png"
-          width="38px"
-          height="38px"
-          no-spinner
-          no-transition
-        />
-        <span>會長</span>
+        <span>t001@gmali.com</span>
       </div>
       <div class="partnerTopOne_name q-my-sm">探險家零壹</div>
       <div class="scale＿bar relative-position w-100">
@@ -32,11 +25,11 @@
           style="width: 100%;"
         ></div>
         <div class="flex justify-between items-center absolute h-100 w-100 text-white q-px-sm">
-          <div>9999</div>
-          <div>-</div>
+          <div>工會貢獻度</div>
+          <div>100%</div>
         </div>
       </div>
-      <div class="flex justify-between text-xs">
+      <div class="flex justify-between text-xs q-mt-md">
         <div>
           <span>職位</span>
           <span class="q-ml-xs">會長</span>
@@ -86,8 +79,8 @@ export default {
 
   .img_levelIcon
     right: 0%
-    bottom: -14%
-    width: 40%
+    bottom: 0%
+    width: 25%
 
 @media screen and (min-width: 481px) and (max-width: 520px)
   .img_avatar
@@ -98,8 +91,8 @@ export default {
 
   .img_levelIcon
     right: -4%
-    bottom: -14%
-    width: 45%
+    bottom: 0%
+    width: 30%
 
 @media screen and (max-width: 480px)
   .img_avatar
@@ -111,5 +104,5 @@ export default {
   .img_levelIcon
     right: -15%
     bottom: -8%
-    width: 50%
+    width: 35%
 </style>

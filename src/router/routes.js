@@ -14,9 +14,8 @@ const routes = [
         name: 'mall',
         component: () => import('src/pages/mall/Mall.vue'),
         children: [
-          { path: 'props', name: 'props', component: () => import('pages/mall/child/Props.vue') },
-          { path: 'exchangeCommodity', name: 'exchangeCommodity', component: () => import('pages/mall/child/ExchangeCommodity.vue') },
-          { path: 'myCommodity', name: 'myCommodity', component: () => import('pages/mall/child/MyCommodity.vue') }
+          { path: 'rober', name: 'rober', component: () => import('pages/mall/child/Rober.vue') },
+          { path: 'myRober', name: 'myRober', component: () => import('pages/mall/child/MyRober.vue') }
         ],
         redirect: { name: 'props' }
       },
